@@ -41,5 +41,6 @@ class AppServiceProvider extends ServiceProvider
             }
         }catch(\Exception $exception){}
         Paginator::useBootstrap();
+        \URL::forceScheme('https');
     }
 }
